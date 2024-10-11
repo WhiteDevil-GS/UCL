@@ -1,0 +1,154 @@
+/* Global Styles */
+body {
+    background: linear-gradient(110deg, #010101, #0B4852);
+    height: 200vh;
+    font-family: 'Roboto', sans-serif;
+    color: #f1f1f1; /* General text color */
+}
+
+/* Header Styles */
+header {
+    background-color: #0d6efd;
+    color: white;
+    padding: 2rem;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+header h2 {
+    font-size: 1.75rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+/* Card Section */
+.container {
+    padding: 2rem 0;
+}
+
+.card {
+    background-color: #1f1f1f; /* Dark background for cards */
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 255, 204, 0.189);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 20px rgba(255, 255, 255, 0.5);
+}
+
+.card-body {
+    padding: 1.5rem;
+    background-color: rgb(244, 239, 246);
+}
+
+.card-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #1d509c; /* Blue for card titles */
+    margin-bottom: 1rem;
+}
+
+.card-text {
+    font-size: 1.01rem;
+    font-weight: 300;
+    color: #000000; /* Light grey for card text */
+    margin-bottom: 1.5rem;
+}
+
+.btn-primary {
+    background-color: #083e8f;
+    border-color: #0d6efd;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/* Genre Headers */
+.genre-header {
+    color: white; /* Change color to white for genre headers */
+    font-size: 1.8rem; /* Adjust font size */
+    margin-top: 2rem; /* Space above genre headers */
+    font-weight: bold; /* Make it bold */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Add a subtle shadow for visibility */
+}
+
+/* Footer */
+footer {
+    background-color: #0d6efd;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0px -4px 12px rgba(0, 0, 0, 0.3);
+}
+
+footer a {
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+footer a:hover {
+    color: #f1f1f1;
+    text-decoration: none;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header h2 {
+        font-size: 1.5rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    .card-title {
+        font-size: 1.25rem;
+    }
+
+    .card-text {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header h2 {
+        font-size: 1.25rem;
+    }
+
+    header p {
+        font-size: 0.9rem;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+
+    .card-text {
+        font-size: 0.8rem;
+    }
+}
