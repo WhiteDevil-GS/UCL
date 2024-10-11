@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(110deg, #010101, #0B4852);
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: white;
+    margin-top: 20px;
+}
+
+.live-scoreboard {
+    position: relative; 
+    background-color: rgba(0, 123, 255, 0.8); 
+    padding: 15px;
+    border-radius: 8px;
+    margin: 20px 0; 
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+
+.moving-text {
+    color: white; 
+    white-space: nowrap; 
+    position: absolute; 
+    animation: moveText 15s linear infinite; 
+    width: 100%; 
+    text-align: center; 
+    left: 0; 
+}
+
+@keyframes moveText {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.table {
+    width: 100%; 
+    margin-top: 20px; 
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 123, 255, 0.1); 
+}
+
+.table-striped tbody tr:hover {
+    background-color: rgba(0, 123, 255, 0.2); 
+}
+
+.table-dark {
+    background-color: #343a40; 
+    color: white; 
+}
+
+footer {
+    display: flex;
+    align-items: center; 
+    background-color: #343a40; 
+    color: white; 
+    padding: 20px 40px; 
+}
+
+footer .developer-image {
+    width: 100px;
+    border-radius: 10px;
+}
+
+.footer-image {
+    margin-right: 20px; 
+}
+
+.footer-text {
+    display: flex;
+    flex-direction: column; 
+}
+
+footer a {
+    color: #007bff; 
+    text-decoration: none; 
+}
+
+footer a:hover {
+    text-decoration: underline; 
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem; 
+    }
+
+    .live-scoreboard {
+        margin: 10px 0; 
+        height: 50px; 
+    }
+
+    .moving-text {
+        animation: moveText 10s linear infinite; 
+    }
+
+    footer {
+        flex-direction: column; 
+        align-items: center; 
+    }
+}

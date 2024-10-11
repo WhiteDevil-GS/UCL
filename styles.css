@@ -1,16 +1,13 @@
-/* Global Styles */
 body {
     font-family: Arial, sans-serif;
     background: linear-gradient(110deg, #010101, #0B4852);
     margin: 0;
     padding: 0;
 }
-
 h1, h3 {
     color: #343a40;
 }
 
-/* Main Header Styles */
 .main_bar {
     display: flex;
     justify-content: space-around;
@@ -19,51 +16,40 @@ h1, h3 {
     padding: 20px;
     color: white;
 }
-
 .image img {
-    width: 80px; /* Adjust the size as needed */
+    width: 80px; 
 }
-
 .image2 img {
-    width: 80px; /* Adjust the size as needed */
+    width: 80px; 
 }
-
-/* Genre Header Styles */
 .genre-header {
     margin-top: 40px;
     color: #007bff;
 }
-
-/* Horizontal Line Style */
 .genre-line {
     border: 0;
-    height: 4px; /* Thickness of the line */
-    background-color: #007bff; /* Color of the line */
-    margin: 20px 0; /* Space above and below the line */
+    height: 4px;
+    background-color: #007bff;
+    margin: 20px 0;
 }
-
-/* Card Styles */
 .card {
     border: 1px solid #e0e0e0;
     border-radius: 10px;
     transition: transform 0.3s, box-shadow 0.3s;
-    box-shadow: 0 2px 10px rgba(2, 5, 7, 1); /* Default shadow */
-    cursor: pointer; /* Indicate that the card is clickable */
+    box-shadow: 0 2px 10px rgba(2, 5, 7, 1); 
+    cursor: pointer;
 }
-
 .card:hover {
     transform: scale(1.05);
-    box-shadow: 0 2px 10px rgba(2, 5, 7, 1); /* Maintain shadow on hover */
+    box-shadow: 0 2px 10px white; /* Maintain shadow on hover */
 }
-
 .card:focus {
-    outline: none; /* Remove the default outline */
-    box-shadow: 0 2px 15px rgba(255, 255, 255, 0.8); /* White shadow on focus */
+    outline: none; 
+    box-shadow: 0 2px 15px rgba(255, 255, 255, 0.8); 
 }
-
 .card.selected {
-    border: 2px solid #007bff; /* Highlighted border for selected card */
-    background-color: rgba(0, 123, 255, 0.1); /* Light blue background */
+    border: 2px solid #007bff;
+    background-color: rgba(0, 123, 255, 0.1); 
 }
 
 .card-title {
@@ -82,7 +68,7 @@ h1, h3 {
     right: 20px;
 }
 
-/* Contribution Section */
+
 .contribution {
     margin: 40px 0;
 }
@@ -95,20 +81,40 @@ h1, h3 {
 
 /* Footer Styles */
 footer {
+    display: flex;
+    align-items: center; /* Center content vertically */
     background-color: #343a40; /* Dark background */
     color: white; /* White text */
-    padding: 20px 0; /* Padding top and bottom */
+    padding: 20px 40px; /* Padding top, bottom, and horizontal */
+}
+footer .developer-image {
+    width: 100px;
+    border-radius: 10px;
 }
 
-footer .developer-image {
-    width: 100px; /* Size of developer image */
-    border-radius: 50%; /* Circular image */
+.footer-image {
+    margin-right: 20px; /* Space between the image and text */
+}
+
+.team-logo {
+    width: 100px; /* Adjust size of team logo */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.footer-text {
+    display: flex;
+    flex-direction: column; /* Align text vertically */
 }
 
 footer a {
     color: #007bff; /* Link color */
     text-decoration: none; /* Remove underline */
 }
+
+footer a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
 
 footer a:hover {
     text-decoration: underline; /* Underline on hover */
