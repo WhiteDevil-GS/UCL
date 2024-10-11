@@ -82,7 +82,9 @@ footer .developer-image {
     display: flex;
     flex-direction: column; 
 }
-
+.container h1{
+    color: #007bff;
+}
 footer a {
     color: #007bff; 
     text-decoration: none; 
