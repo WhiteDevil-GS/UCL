@@ -8,30 +8,34 @@ h1, h3 {
     color: #343a40;
 }
 
+/* Header Styles */
 .main_bar {
+    border-radius: 30px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: #007bff;
-    padding: 20px;
+    padding: 10px 20px; /* Adjust padding for better spacing */
     color: white;
+    font-size: 1.5rem; /* Smaller font size for mobile responsiveness */
 }
-.image img {
-    width: 80px; 
+
+.image img, .image2 img {
+    width: 50px; /* Reduce logo size for responsiveness */
 }
-.image2 img {
-    width: 80px; 
-}
+
 .genre-header {
     margin-top: 40px;
     color: #007bff;
 }
+
 .genre-line {
     border: 0;
     height: 4px;
     background-color: #007bff;
     margin: 20px 0;
 }
+
 .card {
     border: 1px solid #e0e0e0;
     border-radius: 10px;
@@ -39,14 +43,17 @@ h1, h3 {
     box-shadow: 0 2px 10px rgba(2, 5, 7, 1); 
     cursor: pointer;
 }
+
 .card:hover {
     transform: scale(1.05);
     box-shadow: 0 2px 10px white; /* Maintain shadow on hover */
 }
+
 .card:focus {
     outline: none; 
     box-shadow: 0 2px 15px rgba(255, 255, 255, 0.8); 
 }
+
 .card.selected {
     border: 2px solid #007bff;
     background-color: rgba(0, 123, 255, 0.1); 
@@ -68,7 +75,7 @@ h1, h3 {
     right: 20px;
 }
 
-
+/* Contribution Section */
 .contribution {
     margin: 40px 0;
 }
@@ -115,23 +122,60 @@ footer a:hover {
     text-decoration: underline; /* Underline on hover */
 }
 
-
-footer a:hover {
-    text-decoration: underline; /* Underline on hover */
-}
-
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
     .main_bar {
         flex-direction: column;
+
+        font-size: 1.2rem; /* Reduce font size for mobile */
+        padding: 15px 10px; /* Adjust padding for mobile */
     }
 
-    .image, .image2 {
-        margin-bottom: 10px;
+    .image img, .image2 img {
+        width: 40px; /* Smaller logo size on mobile */
     }
 
     .live-scoreboard {
         bottom: 10px;
         right: 10px;
+    }
+
+    .card-title {
+        font-size: 1rem; /* Adjust card title font size for mobile */
+    }
+
+    .card-text {
+        font-size: 0.9rem; /* Adjust card text size for mobile */
+    }
+}
+
+@media (max-width: 576px) {
+    .main_bar {
+        font-size: 1rem; /* Further reduce font size for smaller mobile devices */
+        padding: 10px 5px;
+    }
+
+    .image img, .image2 img {
+        width: 35px; /* Smallest logo size for mobile */
+    }
+}
+
+/* For larger screens, such as tablets and desktops */
+@media (min-width: 769px) {
+    .main_bar {
+        font-size: 2rem; /* Larger font size for larger screens */
+        padding: 20px 30px;
+    }
+
+    .image img, .image2 img {
+        width: 70px; /* Larger logo size on tablets and above */
+    }
+
+    .card-title {
+        font-size: 1.5rem; /* Larger card title size for tablets */
+    }
+
+    .card-text {
+        font-size: 1.1rem; /* Larger card text size for tablets */
     }
 }

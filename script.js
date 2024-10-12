@@ -5,21 +5,21 @@ const branches = [
     { name: 'CSDS', wins: 0 },
     { name: 'CSBS', wins: 0 },
     { name: 'IS', wins: 0 },
-    { name: 'MECH', wins: 0 },
+    { name: 'Mechanical', wins: 0 },
     { name: 'Civil', wins: 0 },
     { name: 'Chemical', wins: 0 },
     { name: 'Textile', wins: 0 }
 ];
 
 // ***********************************
-// function getEmoji(rank) {
-//     switch (rank) {
-//         case 1: return '🥇'; // Gold
-//         case 2: return '🥈'; // Silver
-//         case 3: return '🥉'; // Bronze
-//         default: return ''; // No emoji for other ranks
-//     }
-// }
+function getEmoji(rank) {
+    switch (rank) {
+        // case 1: return '🥇'; // Gold
+        // case 2: return '🥈'; // Silver
+        // case 3: return '🥉'; // Bronze
+        default: return ''; // No emoji for other ranks
+    }
+}
 //                       make this script uncomment on the eventday
 // ***********************************
 
