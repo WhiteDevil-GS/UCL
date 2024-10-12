@@ -20,8 +20,14 @@ h1, h3 {
     font-size: 1.5rem; /* Smaller font size for mobile responsiveness */
 }
 
+/* Adjusted logo styles */
 .image img, .image2 img {
-    width: 50px; /* Reduce logo size for responsiveness */
+    width: 60px; /* Increased logo size for better visibility on desktop */
+    transition: transform 0.3s; /* Add transition for hover effect */
+}
+
+.image img:hover, .image2 img:hover {
+    transform: scale(1.1); /* Scale logo slightly on hover */
 }
 
 .genre-header {
@@ -126,13 +132,13 @@ footer a:hover {
 @media (max-width: 768px) {
     .main_bar {
         flex-direction: column;
-
         font-size: 1.2rem; /* Reduce font size for mobile */
         padding: 15px 10px; /* Adjust padding for mobile */
     }
 
     .image img, .image2 img {
-        width: 40px; /* Smaller logo size on mobile */
+        width: 50px; /* Reduced logo size for mobile */
+        margin-bottom: 10px; /* Add space below logo */
     }
 
     .live-scoreboard {
@@ -156,7 +162,7 @@ footer a:hover {
     }
 
     .image img, .image2 img {
-        width: 35px; /* Smallest logo size for mobile */
+        width: 40px; /* Smallest logo size for mobile */
     }
 }
 
