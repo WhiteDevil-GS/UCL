@@ -69,11 +69,12 @@ h1, h3 {
     font-size: 1.25rem;
     color: #343a40;
 }
-
 .card-text {
     color: #6c757d;
 }
-
+.my-4{
+    color: #e0e0e0;
+}
 /* Live Scoreboard Button */
 .live-scoreboard {
     position: fixed;
