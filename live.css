@@ -8,6 +8,7 @@ body {
 h1 {
     color: white;
     margin-top: 20px;
+    animation: fadeIn 1s ease-in-out; /* Fade-in effect */
 }
 
 .live-scoreboard {
@@ -20,6 +21,8 @@ h1 {
     display: flex;
     align-items: center;
     height: 60px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    animation: bounceIn 1s ease; /* Bounce in effect */
 }
 
 .moving-text {
@@ -41,17 +44,44 @@ h1 {
     }
 }
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.5); 
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.05); 
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1); 
+    }
+}
+
 .table {
     width: 100%; 
     margin-top: 20px; 
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Prevent overflow */
 }
 
 .table-striped tbody tr:nth-of-type(odd) {
     background-color: rgba(0, 123, 255, 0.1); 
+    transition: background-color 0.3s ease; /* Smooth transition */
 }
 
 .table-striped tbody tr:hover {
     background-color: rgba(0, 123, 255, 0.2); 
+    transform: translateY(-2px); /* Lift effect on hover */
 }
 
 .table-dark {
@@ -65,11 +95,13 @@ footer {
     background-color: #343a40; 
     color: white; 
     padding: 20px 40px; 
+    animation: fadeInUp 1s ease-in-out; /* Fade in from below */
 }
 
 footer .developer-image {
     width: 100px;
     border-radius: 10px;
+    animation: reverse linear infinite; /* Continuous spinning effect */
 }
 
 .footer-image {
@@ -80,9 +112,11 @@ footer .developer-image {
     display: flex;
     flex-direction: column; 
 }
-.container h1{
+
+.container h1 {
     color: #007bff;
 }
+
 footer a {
     color: #007bff; 
     text-decoration: none; 
@@ -90,6 +124,26 @@ footer a {
 
 footer a:hover {
     text-decoration: underline; 
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 @media (max-width: 768px) {
