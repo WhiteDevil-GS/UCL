@@ -1,6 +1,6 @@
 
 const branches = [
-    { name: 'CSE', wins: 0 },
+    { name: 'CSE', wins: 3 },
     { name: 'AIML', wins: 0 },
     { name: 'CSDS', wins: 0 },
     { name: 'CSBS', wins: 0 },
@@ -18,7 +18,7 @@ const branches = [
 // ***********************************
 function getEmoji(rank) {
     switch (rank) {
-        // case 1: return '🥇';
+        case 1: return '🥇';
         // case 2: return '🥈'; 
         // case 3: return '🥉'; 
         default: return ''; 
