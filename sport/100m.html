@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,39 +10,60 @@
     <style>
         body {
             background: linear-gradient(110deg, #010101, #0B4852);
-            color: white; /* Text color set to white */
+            color: white;
         }
-        h1{
+
+        h1 {
             color: aqua;
+        }
+
+        .winner-announcement {
+            background-color: #1E1E1E;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+            color: gold;
+        }
+
+        .winner-announcement h2 {
+            color: #FFD700;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        footer a:hover {
+            color: #FFD700;
         }
     </style>
 </head>
+
 <body>
     <header class="text-center p-4">
         <h1>Bapuji Institute of Engineering and Technology</h1>
         <h2>100m Sprint</h2>
-        <p>Game Rules and Registration</p>
+        <p>Conducted on [Date]</p>
     </header>
+
+    <div class="container winner-announcement">
+        <h2>🏆 Tournament Winners 🏆</h2>
+        <!-- Girls' winners -->
+        <p><strong>Winner (Girls): 🥇 Arathi (EEE)</strong></p>
+        <p><strong>Runner-Up (Girls): 🥈 Khushi (AI)</strong></p>
+        
+        <!-- Boys' winners -->
+        <p><strong>Winner (Boys): 🥇 Rahul C G</strong></p>
+        <p><strong>Runner-Up (Boys): 🥈 Majunath C P</strong></p>
+        
+        <p>Congratulations to the winners and all the participants!</p>
+    </div>
+
     <div class="container text-center my-4">
         <h4>Organizer</h4>
         <p><strong>Name:</strong> Ganesh G Soppin <br> <strong>Phone:</strong> 6363335163</p>
-    </div>
-    <div class="container">
-        <h3>Rules and Regulations</h3>
-        <ul>
-            <li>All participants must be ready at the starting line before the race begins.</li>
-            <li>False starts will lead to immediate disqualification from that race.</li>
-            <li>The race will be held on a standard track, and participants must stay within their designated lanes.</li>
-            <li>The winner will be determined by the first participant to cross the finish line.</li>
-            <li>In case of a tie, a photo finish will be used to determine the winner.</li>
-        </ul>
-
-        <h4 class="mt-4">Cost of Participation</h4>
-        <p>₹70 per head</p>
-
-        <div class="text-center mt-4">
-            <a href="https://forms.gle/w8Aw7JNtWJRo8dQZ8" target="_blank" class="btn btn-primary">Register Now</a>
-        </div>
     </div>
 
     <footer class="text-center p-4">
@@ -50,4 +72,5 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

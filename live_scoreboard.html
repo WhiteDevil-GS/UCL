@@ -22,13 +22,19 @@
             <thead class="table-dark">
                 <tr>
                     <th>Branch</th>
-                    <th>Matches Won</th>
+                    <th>Total Points (Winners)</th>
+                    <th>Total Points (Runners)</th>
+                    <th>Total Points</th>
                 </tr>
             </thead>
             <tbody id="leaderboard-body">
-                <!-- Rows will be populated by JavaScript -->
             </tbody>
         </table>
+
+        <div id="branch-details" class="mt-4 p-4 border rounded d-none">
+            <h3>Branch Details</h3>
+            <p id="branch-details-content"></p>
+        </div>
     </div>
 
     <footer class="text-center p-4 footer">
@@ -42,7 +48,7 @@
         </div>
     </footer>
 
-    <script src="script.js"></script> <!-- Link to JavaScript file -->
+    <script src="script.js"></script>
 </body>
 
 </html>

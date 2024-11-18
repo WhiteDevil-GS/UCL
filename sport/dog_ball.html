@@ -10,10 +10,33 @@
     <style>
         body {
             background: linear-gradient(110deg, #010101, #0B4852);
-            color: white; /* Text color set to white */
+            color: white;
         }
-        h1{
+
+        h1 {
             color: aqua;
+        }
+
+        .winner-announcement {
+            background-color: #1E1E1E;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+            color: gold;
+        }
+
+        .winner-announcement h2 {
+            color: #FFD700;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        footer a:hover {
+            color: #FFD700;
         }
     </style>
 </head>
@@ -22,35 +45,19 @@
     <header class="text-center p-4">
         <h1>Bapuji Institute of Engineering and Technology</h1>
         <h2>Dog and the Bone Game</h2>
-        <p>Game Rules and Registration</p>
+        <p>Conducted on [Date]</p>
     </header>
 
-    <!-- Organizer Info Section -->
-    <div class="container text-center my-4">
-        <h4>Organizer</h4>
-        <p><strong>Name: </strong>Jeevika V Thadur<br> <strong>Phone:</strong> 9741533884</p>
+    <div class="container winner-announcement">
+        <h2>🏆 Tournament Winners 🏆</h2>
+        <p><strong>Winner: 🥇 1st Year(Mixed Branches)</strong></p>
+        <p><strong>Runner-Up: 🥈 ISE</strong></p>
+        <p>Congratulations to the winners and all the participants!</p>
     </div>
 
-    <div class="container">
-        <h3>Rules and Regulations</h3>
-        <ul>
-            <li>Each team must consist of 5 players.</li>
-            <li>Each player in the team will be given a number between 1 to 5.</li>
-            <li>A small ball is placed in the center of the playing field.</li>
-            <li>The referee calls a number.</li>
-            <li>The player with that number (number called by the referee) from both teams runs towards the center to grab the ball.</li>
-            <li>Once a player has the ball, they must run back to their team without being tagged (caught) by an opposing player.</li>
-            <li>If a player successfully returns to their team with the ball, their team scores 20 points.</li>
-            <li>If a player is tagged (caught) by an opposing player while running back to their team, then the opposing player scores 10 points.</li>
-            <li>The team with the highest score at the end of 2 rounds wins.</li>
-        </ul>
-
-        <h4 class="mt-4">Cost of Participation</h4>
-        <p>₹300 per team</p>
-
-        <div class="text-center mt-4">
-            <a href="https://forms.gle/KSgeMsvHtvKsuJqF8" target="_blank" class="btn btn-primary">Register Now</a>
-        </div>
+    <div class="container text-center my-4">
+        <h4>Organizer</h4>
+        <p><strong>Name:</strong> Jeevika V Thadur <br> <strong>Phone:</strong> 9741533884</p>
     </div>
 
     <footer class="text-center p-4">

@@ -1,38 +1,116 @@
+
 body {
     font-family: Arial, sans-serif;
     background: linear-gradient(110deg, #010101, #0B4852);
     margin: 0;
     padding: 0;
 }
+h1.title{
+    color: rgb(20, 166, 223);
+}
 
 h1 {
     color: white;
     margin-top: 20px;
-    animation: fadeIn 1s ease-in-out; /* Fade-in effect */
+    text-align: center;
+    animation: fadeIn 1s ease-in-out; 
 }
 
+
 .live-scoreboard {
-    position: relative; 
-    background-color: rgba(0, 123, 255, 0.8); 
+    position: relative;
+    background-color: rgba(0, 123, 255, 0.8);
     padding: 15px;
     border-radius: 8px;
-    margin: 20px 0; 
+    margin: 20px auto;
     overflow: hidden;
     display: flex;
     align-items: center;
+    justify-content: center;
     height: 60px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Shadow effect */
-    animation: bounceIn 1s ease; /* Bounce in effect */
+    width: 90%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    animation: bounceIn 1s ease; 
 }
 
+
 .moving-text {
-    color: white; 
-    white-space: nowrap; 
-    position: absolute; 
+    color: white;
+    white-space: nowrap;
+    position: absolute;
     animation: moveText 15s linear infinite; 
-    width: 100%; 
-    text-align: center; 
-    left: 0; 
+    width: 100%;
+    text-align: center;
+    left: 0;
+}
+
+
+.table {
+    width: 90%;
+    margin: 20px auto;
+    border-radius: 10px; 
+    overflow: hidden;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 123, 255, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.table-striped tbody tr:hover {
+    background-color: rgba(0, 123, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+.table-dark {
+    background-color: #343a40;
+    color: white;
+}
+
+#branch-details {
+    color: white; 
+    background-color: rgba(0, 0, 0, 0.7); 
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 90%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+#branch-details ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#branch-details ul li {
+    margin-bottom: 5px; 
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #343a40;
+    color: white;
+    padding: 20px;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+footer .developer-image {
+    width: 100px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #0056b3;
 }
 
 @keyframes moveText {
@@ -55,75 +133,16 @@ h1 {
 
 @keyframes bounceIn {
     0% {
-        transform: scale(0.5); 
+        transform: scale(0.5);
         opacity: 0;
     }
     50% {
-        transform: scale(1.05); 
+        transform: scale(1.05);
         opacity: 1;
     }
     100% {
-        transform: scale(1); 
+        transform: scale(1);
     }
-}
-
-.table {
-    width: 100%; 
-    margin-top: 20px; 
-    border-radius: 10px; /* Rounded corners */
-    overflow: hidden; /* Prevent overflow */
-}
-
-.table-striped tbody tr:nth-of-type(odd) {
-    background-color: rgba(0, 123, 255, 0.1); 
-    transition: background-color 0.3s ease; /* Smooth transition */
-}
-
-.table-striped tbody tr:hover {
-    background-color: rgba(0, 123, 255, 0.2); 
-    transform: translateY(-2px); /* Lift effect on hover */
-}
-
-.table-dark {
-    background-color: #343a40; 
-    color: white; 
-}
-
-footer {
-    display: flex;
-    align-items: center; 
-    background-color: #343a40; 
-    color: white; 
-    padding: 20px 40px; 
-    animation: fadeInUp 1s ease-in-out; /* Fade in from below */
-}
-
-footer .developer-image {
-    width: 100px;
-    border-radius: 10px;
-    animation: reverse linear infinite; /* Continuous spinning effect */
-}
-
-.footer-image {
-    margin-right: 20px; 
-}
-
-.footer-text {
-    display: flex;
-    flex-direction: column; 
-}
-
-.container h1 {
-    color: #007bff;
-}
-
-footer a {
-    color: #007bff; 
-    text-decoration: none; 
-}
-
-footer a:hover {
-    text-decoration: underline; 
 }
 
 @keyframes spin {
@@ -146,22 +165,28 @@ footer a:hover {
     }
 }
 
+
 @media (max-width: 768px) {
     h1 {
-        font-size: 1.5rem; 
+        font-size: 1.5rem;
     }
 
     .live-scoreboard {
-        margin: 10px 0; 
-        height: 50px; 
+        margin: 10px auto;
+        height: 50px;
     }
 
     .moving-text {
-        animation: moveText 10s linear infinite; 
+        animation: moveText 10s linear infinite;
     }
 
     footer {
-        flex-direction: column; 
-        align-items: center; 
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    footer .developer-image {
+        margin-bottom: 10px;
     }
 }
