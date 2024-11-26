@@ -11,7 +11,8 @@ const branches = [
             { game: "Volley Ball", winners: [], runners: ["Team UNICS"] },
             { game: "Throw Ball", winners: ["Team CSE"], runners: [] },
             { game: "Tennikoit", winners: ["Disha V Kumar"], runners: ["Nisarga G S"] },
-            { game: "Badminton", winners: ["Kalpana V"], runners: ["Apekshaa Shamnur"] }
+            { game: "Badminton", winners: ["Kalpana V"], runners: ["Apekshaa Shamnur"] },
+            { game: "Kabaddi", winners: [""], runners: ["Team UNICS"] }
         ]
     },
     {
@@ -23,7 +24,8 @@ const branches = [
     {
         name: "AIML",
         games: [{ game: "100m (Girls)", runners: ["Khushi"] },
-                { game: "Javelin (Boys)", winners: ["ShivaKumar"], runners: [] }
+                { game: "Javelin (Boys)", winners: ["ShivaKumar"], runners: [] },
+                { game: "Kabaddi", winners: ["Team AIML"], runners: [""] }
     ]
     },
     {
@@ -45,10 +47,13 @@ const branches = [
     { name: "CSDS", games: [
         { game: "Relay (Boys)", winners: [], runners: ["Team Data Science"] },
     ] },
-    { name: "CSBS", games: [] },
+    { name: "CSBS", games: [
+        { game: "Laghori", winners: [""], runners: ["Team CSBS"] }
+    ] },
     { name: "Mechanical", games: [] },
     { name: "Civil", games: [
-        { game: "Shotput(Boys)", winners: [], runners: ["Naveen"] }
+        { game: "Shotput(Boys)", winners: [], runners: ["Naveen"] },
+        { game: "Laghori", winners: ["Team Civil"], runners: [""] }
     ] },
     { name: "Chemical", games: [] },
     { name: "Textile", games: [] },
